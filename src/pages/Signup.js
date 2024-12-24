@@ -19,11 +19,8 @@ function Signup() {
 
   return (
     <div className="min-h-screen grid md:grid-cols-2">
-      {/* Left Sidebar (Hidden on mobile) */}
       <div className="hidden md:flex bg-white relative items-center justify-center">
-        {/* Center Image */}
         <img src="/center.png" alt="Center" className="max-w-lg" />
-        {/* Bottom Left Image */}
         <img
           src="/left.png"
           alt="Bottom Left"
@@ -34,11 +31,9 @@ function Signup() {
       {/* Right Content */}
       <div className="flex flex-col justify-center items-center bg-gray-100">
         <div className="bg-white shadow-lg rounded-lg p-8 w-[90%] max-w-xxl">
-          {/* Logo */}
           <div className="flex justify-center mb-4">
             <img src="/logo.png" alt="Logo" className="h-14" />
           </div>
-          {/* Title */}
           <h1 className="text-center text-xl font-bold mb-6">
             Welcome to CodeAnt AI
           </h1>
@@ -65,7 +60,6 @@ function Signup() {
               Self Hosted
             </button>
           </div>
-          {/* Dynamic Content */}
           <div className="flex flex-col items-center space-y-3 w-full md:w-[70%] mx-auto">
             {signinOptions[activeTab].map((option, index) => (
               <button
@@ -78,7 +72,6 @@ function Signup() {
             ))}
           </div>
         </div>
-        {/* Footer Text */}
         <p className="text-sm mt-4">
           By signing in you agree to the{" "}
           <span className="font-bold text-black cursor-pointer">
